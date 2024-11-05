@@ -1,0 +1,240 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #00b4d8;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#home h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+#home p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* About Section */
+#about, #projects, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-card, .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover, .project-card:hover {
+    transform: translateY(-10px);
+}
+/* About Section Styling */
+/* About Section */
+/* About Section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-card {
+    background-color: linear-gradient(135deg, #00b4d8, #0077b6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.about-card p, .about-card ul {
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.about-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-card ul li {
+    margin-bottom: 5px;
+}
+
+    
+
+/* Projects Section - Grid Layout */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+#contact form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contact button {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0077b6;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#scrollTopButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #00b4d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#scrollTopButton:hover {
+    background-color: #0077b6;
+}
+
+button{
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    border-radius: 50%;
+    color:#ffffff;
+    background-color: #2381b3;
+    width: 100px;
+    height: 40px;
+    
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.social_links{
+    width:50px;
+    height: auto;
+    border: 5px solid #bdcdd5;
+    border-radius: 20%;
+}

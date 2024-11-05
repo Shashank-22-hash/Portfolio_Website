@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to AOS Library for animations (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="images/pi.jpg" alt="Profile Picture" class="profile-picture">
+        <br>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Shashank Nirupam, a web developer with a passion for creating dynamic and responsive websites.</p>
+        <br><br>
+        <div class="col-12 text-center my-3 ">
+            <div class = "col-12 d-flex justify-content-center align-items-center">
+
+                <a href = "https://www.linkedin.com/in/shashank-nirupam-228114241/" target ="_blank" >
+                    <img src="images/in.png"  width="50px" height="50px" class = "social_links">
+                </a>
+                <a href = "https://www.instagram.com/ig.shashank_22/" target ="_blank" class = "ms-3">
+                    <img src="images/ig.png"  width="50px" height="50px" class = "social_links">
+                </a>
+                <a href = "https://github.com/Shashank-22-hash" target ="_blank" class = "ms-3">
+                    <img src="images/git.png"  width="50px" height="50px" class = "social_links">
+                </a>
+            </div> 
+            <br><br>
+           <button> <a href="https://drive.google.com/file/d/1zcba3G7v706wHnIUsJtunsIUPb8arb-_/view?usp=drive_link" target="_blank" class="btn btn-primary my-4">My Resume</a>   </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-cards">
+            <div class="about-card">
+                <h3>Education</h3>
+                <p><br><br></p>
+                <p>B.Tech in Electronics and Communication Engineering, Bhagalpur College of Engineering</p>
+                <p><i style="font-size:smaller">2021 - Present</i></p>
+            </div>
+            <div class="about-card">
+                <h3>Skills</h3>
+                <br>
+                <ul>
+                    <li>Python & C++  </li>
+                    <li>HTML/CSS/JS </li>
+                    <li>Django & Flask</li>
+                    <li>React & Bootstrap</li>
+                    <li>SQL & Firebase</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3>Experience</h3>
+                <br>
+                <p>Full Stack Web Development Intern at Unified Mentors<br><i style="font-size:smaller">Oct 2024 - Present</i></p>
+                <p><br></p>
+                
+                <p>Salesforce Developer Intern at SmartBridge<br><i style="font-size:smaller">Dec 2023 - Jan 2024</i></p>
+            </div>
+        </div>
+    </section>
+    
+      
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card" data-aos="zoom-in">
+            <img src="images/P1.jpg">
+            <p><br></p>
+            <h3>Music Player</h3>
+            <p>A music player web app with clean UI and inbuilt playlist.</p>
+            <p><br></p>
+            <button ><a href="https://shashank-22-hash.github.io/Music_Player/" target="_blank" >Demo</a></button>
+            <button ><a href="https://github.com/Shashank-22-hash/Music_Player" target="_blank" >Code</a></button>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+            <img src="images/P2.jpg">
+            <p><br></p>
+            <h3>Tic Tac Toe </h3>
+            <p>Tic tac toe game with visually appealing UI.</p>
+            <p><br></p>
+            <button ><a href="https://shashank-22-hash.github.io/Tic-Tac-Toe/" target="_blank" >Demo</a></button>
+            <button ><a href="https://github.com/Shashank-22-hash/Tic-Tac-Toe" target="_blank" >Code</a></button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/mnnqdaon" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+
+    <!-- AOS Library Script for Animations (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
